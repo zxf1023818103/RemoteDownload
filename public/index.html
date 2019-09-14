@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>影视中心离线下载服务</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./node_modules/bootstrap-fileinput/css/fileinput.min.css" />
+    <style>
+        .new-task {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand mb-0 h1">影视中心离线下载服务</span>
+        </nav>
+    </header>
+    <main role="main" class="container">
+        <div class="py-5 text-center">
+            <h2>影视中心离线下载服务</h2>
+            <p class="lead">提交下载任务，通过审核后开始下载，完成后资源自动上传至影视中心。</p>
+        </div>
+        <div class="container">
+            <form class="needs-validation" action="/" method="POST">
+                <div class="form-group">
+                    <div class="row custom-control custom-radio">
+                        <label for="uriRadio">电影名称</label><span style="color: red"> *</span>
+                        <div class="row form-group">
+                            <input type="text" id="movieNameInput" name="movieName" class="form-control" placeholder="请输入电影名称" required/>
+                        </div>
+                    </div>
+                    <div class="row custom-control custom-radio">
+                        <input type="radio" id="uriRadio" name="type" class="custom-control-input" value="uri" checked required />
+                        <label class="custom-control-label" for="uriRadio">新建链接任务 (http/ftp)</label>
+<!--                        <label class="custom-control-label" for="uriRadio">新建链接任务 (http/ftp/磁力)</label>-->
+                        <div class="row form-group">
+                            <input type="url" id="uriInput" name="uris" class="form-control" placeholder="请输入下载链接" />
+                        </div>
+                    </div>
+
+<!--                    <div class="row custom-control custom-radio">-->
+<!--                        <input type="radio" id="torrentRadio" name="type" class="custom-control-input" value="torrent" required />-->
+<!--                        <label class="custom-control-label" for="torrentRadio">新建 BT 下载任务</label>-->
+<!--                        <div class="row form-group">-->
+<!--                            <input type="file" id="torrentInput" name="torrent" class="file form-control" />-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="row custom-control custom-radio">-->
+<!--                        <input type="radio" id="metalinkRadio" name="type" class="custom-control-input" value="metalink" required />-->
+<!--                        <label class="custom-control-label" for="metalinkRadio">新建 Metalink 下载任务</label>-->
+<!--                        <div class="row form-group">-->
+<!--                            <input type="file" id="metalinkInput" name="metalink" class="file form-control" />-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+                </div>
+                <div class="row form-group">
+                    <div class="row form-check">
+                        <input type="checkbox" class="form-check-input" id="notifyMe" name="notifyMe">
+                        <label class="form-check-label" for="exampleCheck1">任务完成时发送通知邮件</label>
+                    </div>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="请输入电子邮件地址" />
+                </div>
+                <div class="row form-group">
+                    <button type="submit" class="btn btn-primary form-control">确定</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2019 南昌航空大学影视中心</p>
+    </footer>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap-fileinput/js/locales/zh.js"></script>
+    <script src="./node_modules/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="./node_modules/bootstrap-fileinput/themes/fas/theme.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

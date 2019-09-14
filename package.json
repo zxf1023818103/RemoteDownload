@@ -1,0 +1,83 @@
+{
+  "name": "nchu-remote-download-service",
+  "version": "1.2.0",
+  "description": "Remote download service for NCHU intranet.",
+  "main": "index.js",
+  "bin": {
+    "nchu-remote-download-service": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_ENV=development node index.js",
+    "prd": "pm2 start index.js",
+    "test": "NODE_ENV=test echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zxf1023818103/nchu-remote-download-service.git"
+  },
+  "keywords": [
+    "NCHU",
+    "remote",
+    "download",
+    "aria2"
+  ],
+  "author": "Zeng Xiangfei",
+  "contributors": [
+    "Luo Ping"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zxf1023818103/nchu-remote-download-service/issues"
+  },
+  "homepage": "http://10.1.79.11",
+  "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-convert": "^1.2.2",
+    "@types/koa-router": "^7.0.41",
+    "@types/koa-static": "^4.0.1",
+    "@types/lodash": "^4.14.134",
+    "@types/node-rsa": "^1.0.0",
+    "@types/nodemailer": "^4.6.8",
+    "@types/sequelize": "^4.28.3",
+    "fluent-ffmpeg": "^2.1.2",
+    "mocha": "^5.2.0",
+    "pm2": "^3.5.1",
+    "tedious": "^6.2.0"
+  },
+  "dependencies": {
+    "aria2": "^4.0.3",
+    "email-validator": "^2.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-log4": "^2.3.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.15",
+    "log4js": "^4.3.1",
+    "node-rsa": "^1.0.5",
+    "nodemailer": "^5.1.1",
+    "sequelize": "^6.0.0",
+    "tedious": "^6.2.0"
+  },
+  "bundledDependencies": [
+    "aria2",
+    "email-validator",
+    "koa",
+    "koa-bodyparser",
+    "koa-convert",
+    "koa-log4",
+    "koa-router",
+    "koa-static",
+    "lodash",
+    "log4js",
+    "node-rsa",
+    "nodemailer",
+    "fluent-ffmpeg",
+    "sequelize",
+    "tedious"
+  ]
+}

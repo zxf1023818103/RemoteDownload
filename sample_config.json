@@ -1,0 +1,82 @@
+{
+    "port": 8000,
+    "rootDir": "/movie",
+    "ffmpegPath": "$PATH",
+    "ffprobePath": "$PATH",
+    "stateRefreshMilliseconds": 1000,
+    "aria2JsConfig": {
+    "host": "localhost",
+        "port": 6800,
+        "secure": false,
+        "secret": "",
+        "path": "/jsonrpc"
+},
+    "mysqlUri": "mysql://user:user@localhost:3306/nchu_remote_download_service",
+    "nodeMailerConfig": {
+    "host": "smtp.qq.com",
+        "port": 25,
+        "secure": true,
+        "auth": {
+        "user": "****@qq.com",
+            "pass": "password"
+    }
+},
+    "office365Config": {
+    "pool": true,
+        "host": "smtp.office365.com",
+        "port": 587,
+        "logger": false,
+        "secure": false,
+        "auth": {
+        "user": "***@mail",
+            "pass": "password"
+    }
+},
+    "allowedExtensionNames": [
+
+],
+    "sso": {
+    "baseUrl": "baseUrl",
+        "redirectUrl": "redirectUrl",
+        "siteId": 223,
+        "key": "key"
+},
+    "aria2": {
+    "pause-metadata": "true",
+        "dir": "/movie"
+},
+    "mssql": {
+    "server": "serverHost",
+        "authentication": {
+        "type": "default",
+            "options": {
+            "userName": "user",
+                "password": "password"
+        }
+    },
+    "options": {
+        "encrypt": true,
+            "database": "RemoteDownloadService"
+    }
+},
+    "mssql_orm": {
+    "database": "RemoteDownloadService",
+        "username": "user",
+        "password": "password",
+        "host": "password",
+        "dialect": "mssql"
+},
+    "mssql_sa_orm": {
+    "database": "RemoteDownloadService",
+        "username": "sa",
+        "password": "password",
+        "host": "serverHost",
+        "dialect": "mssql",
+        "define": {
+        "schema": "dbo",
+            "timestamps": true,
+            "freezeTableName": true,
+            "tableName": "RemoteDownload"
+    }
+}
+}
