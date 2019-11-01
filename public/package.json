@@ -12,7 +12,7 @@
     "@fortawesome/fontawesome-free": "^5.7.2",
     "bootstrap": "^4.3.1",
     "bootstrap-fileinput": "^4.5.2",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.0",
     "popper.js": "^1.14.7"
   }
 }
