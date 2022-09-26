@@ -43,7 +43,7 @@
     "@types/sequelize": "^4.28.3",
     "fluent-ffmpeg": "^2.1.2",
     "mocha": "^5.2.0",
-    "pm2": "^3.5.1",
+    "pm2": "^5.2.0",
     "tedious": "^6.2.0"
   },
   "dependencies": {
